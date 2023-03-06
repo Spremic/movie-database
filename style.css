@@ -1,0 +1,122 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: navy;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333333;
+  width: 100%;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  height: 9vh;
+  margin-top: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+input {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.filmovi {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.film {
+  background-color: #333333;
+  width: 30%;
+  overflow: hidden;
+  position: relative;
+  margin: 20px 15px;
+}
+
+.film_slike {
+  cursor: pointer;
+  width: 100%;
+  height: 60vh;
+}
+.paging {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+#next {
+  cursor: pointer;
+}
+#previous {
+  cursor: pointer;
+}
+#modalPozadina {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+#modal-content {
+  background-color: #999;
+  margin: 10% auto;
+  width: 40%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  animation: modal 1s;
+}
+
+.modal-body,
+.modal-footer {
+  padding: 10px 20px;
+  color: black;
+  text-align: center;
+}
+#modal-heder {
+  font-size: 1.5em;
+}
+
+.closeBtn {
+  width: 30px;
+  line-height: 30px;
+  color: white;
+  float: right;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.modalSlika {
+  width: 200px;
+  height: 300px;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
